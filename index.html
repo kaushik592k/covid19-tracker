@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Covid19 Tracker</title>
+</head>
+<body>
+<h1>Covid19 <span style="color:#707070;">Tracker</span></h1>
+<div class="box">
+    <form name="search">
+        <input list="browsers" type="text" id="txtCountry" class="input" name="txt" 
+        onmouseout="document.search.txt.value = ''">
+        <datalist id="browsers">
+          </datalist>
+    </form> 
+</div>
+<h2 id="country">Global</h2> 
+<div class="row">
+    <div class="col">
+        <h2>Confirmed</h2>
+        <h4 id="confirmed"></h4>
+    </div>
+    <div class="col">
+        <h2>Active</h2>
+        <h4 id="active"></h4>
+    </div>
+    <div class="col">
+        <h2>Recovered</h2>
+        <h4 id="recovered"></h4>
+    </div>
+    <div class="col">
+        <h2>Deaths</h2>
+        <h4 id="deaths"></h4>
+    </div>
+</div>
+
+</body>
+</html>
