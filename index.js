@@ -7,7 +7,7 @@ $(document).ready(function () {
     $("#txtCountry").autocomplete({  
         source: function (request, response) {  
             $.ajax({  
-                url: "http://covid19tracker-592k.herokuapp.com/search",  
+                url: "https://covid19tracker-592k.herokuapp.com/search",  
                 method: "post",  
                 contentType: "application/json;charset=utf-8",  
                 data: JSON.stringify({ term: request.term }),  
@@ -39,7 +39,7 @@ $(document).ready(function () {
 var ajax_call = function() {
     console.log("Global requested");
     $.ajax({
-    url: 'http://covid19tracker-592k.herokuapp.com/global',
+    url: 'https://covid19tracker-592k.herokuapp.com/global',
     dataType: 'json',
     success: function(data) {
         console.log(data);
